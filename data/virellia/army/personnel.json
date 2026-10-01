@@ -1,0 +1,212 @@
+{
+  "overview": {
+    "activePersonnel": 876000,
+    "reservePersonnel": 452000,
+    "activeToReserveRatio": "1.94 : 1",
+    "civilianPersonnel": 362000,
+    "overseasDeployed": "184,000–190,000"
+  },
+  "forceComposition": {
+    "activeCombatPersonnel": 315000,
+    "activeSupportPersonnel": 561000,
+    "reserveCombatPersonnel": 145000,
+    "reserveSupportPersonnel": 307000
+  },
+  "officers": {
+    "juniorGrade": {
+      "label": "Junior-Grade Officers",
+      "ranks": "First Lieutenants and Captains",
+      "personnel": 107000
+    },
+    "fieldGrade": {
+      "label": "Field-Grade Officers",
+      "ranks": "Majors and Lieutenant Colonels",
+      "personnel": 49000
+    },
+    "generals": {
+      "brigadierGeneral": 264,
+      "majorGeneral": 81,
+      "lieutenantGeneral": 36,
+      "general": 10
+    }
+  },
+  "recruitment": {
+    "system": "All-volunteer force",
+    "standardAgeRange": "18–40 years",
+    "limitedMinorAccession": "Age 16 with parental consent and additional accession requirements.",
+    "enlistmentWithoutParentalConsent": "Age 18 and older.",
+    "typicalContractLength": "2–6 years, depending on contract.",
+    "annualRecruitmentTarget": null,
+    "annualRecruitsAccepted": 22000,
+    "applicantAcceptanceRate": null,
+    "recruitingStationsCommands": null
+  },
+  "eligibility": [
+    "Applicants normally must be between 18 and 40 years of age. Limited enlistment at age 16 is permitted with parental consent and additional qualifying requirements.",
+    "Applicants must be valid legal citizens of the Virellian Republic.",
+    "A high school diploma or recognized equivalent, such as a GED, is required.",
+    "Applicants must take and pass the Armed Forces Qualification Exam (AFQE).",
+    "Applicants must take and pass the Armed Forces Medical Assessment (AFMA).",
+    "Criminal history is reviewed during accession. Certain serious criminal offenses can permanently disqualify an applicant from military service.",
+    "Identity, legal records, medical history, and other eligibility information are reviewed during the enlistment process.",
+    "The Army uses a waist-to-height accession standard. A ratio below 0.55 meets the initial body-composition requirement.",
+    "Recruits must subsequently meet Army physical-fitness standards during training."
+  ],
+  "rankSystem": {
+    "basis": "The Virellian Army uses a rank structure modeled on the United States Army system.",
+    "enlisted": [
+      {
+        "rank": "Private",
+        "payGrade": "E-1",
+        "abbreviation": "PV1",
+        "natoCode": "OR-1"
+      },
+      {
+        "rank": "Private",
+        "payGrade": "E-2",
+        "abbreviation": "PV2",
+        "natoCode": "OR-2"
+      },
+      {
+        "rank": "Private First Class",
+        "payGrade": "E-3",
+        "abbreviation": "PFC",
+        "natoCode": "OR-3"
+      },
+      {
+        "rank": "Specialist",
+        "payGrade": "E-4",
+        "abbreviation": "SPC",
+        "natoCode": "OR-4"
+      },
+      {
+        "rank": "Corporal",
+        "payGrade": "E-4",
+        "abbreviation": "CPL",
+        "natoCode": "OR-4"
+      },
+      {
+        "rank": "Sergeant",
+        "payGrade": "E-5",
+        "abbreviation": "SGT",
+        "natoCode": "OR-5"
+      },
+      {
+        "rank": "Staff Sergeant",
+        "payGrade": "E-6",
+        "abbreviation": "SSG",
+        "natoCode": "OR-6"
+      },
+      {
+        "rank": "Sergeant First Class",
+        "payGrade": "E-7",
+        "abbreviation": "SFC",
+        "natoCode": "OR-7"
+      },
+      {
+        "rank": "Master Sergeant",
+        "payGrade": "E-8",
+        "abbreviation": "MSG",
+        "natoCode": "OR-8"
+      },
+      {
+        "rank": "First Sergeant",
+        "payGrade": "E-8",
+        "abbreviation": "1SG",
+        "natoCode": "OR-8"
+      },
+      {
+        "rank": "Sergeant Major",
+        "payGrade": "E-9",
+        "abbreviation": "SGM",
+        "natoCode": "OR-9"
+      },
+      {
+        "rank": "Command Sergeant Major",
+        "payGrade": "E-9",
+        "abbreviation": "CSM",
+        "natoCode": "OR-9"
+      },
+      {
+        "rank": "Sergeant Major of the Army",
+        "payGrade": "Special",
+        "abbreviation": "SMA",
+        "natoCode": "OR-9"
+      },
+      {
+        "rank": "Senior Enlisted Advisor to the Chairman",
+        "payGrade": "Special",
+        "abbreviation": "SEAC",
+        "natoCode": "OR-9"
+      }
+    ],
+    "officers": [
+      {
+        "rank": "Second Lieutenant",
+        "payGrade": "O-1",
+        "abbreviation": "2LT",
+        "natoCode": "OF-1"
+      },
+      {
+        "rank": "First Lieutenant",
+        "payGrade": "O-2",
+        "abbreviation": "1LT",
+        "natoCode": "OF-1"
+      },
+      {
+        "rank": "Captain",
+        "payGrade": "O-3",
+        "abbreviation": "CPT",
+        "natoCode": "OF-2"
+      },
+      {
+        "rank": "Major",
+        "payGrade": "O-4",
+        "abbreviation": "MAJ",
+        "natoCode": "OF-3"
+      },
+      {
+        "rank": "Lieutenant Colonel",
+        "payGrade": "O-5",
+        "abbreviation": "LTC",
+        "natoCode": "OF-4"
+      },
+      {
+        "rank": "Colonel",
+        "payGrade": "O-6",
+        "abbreviation": "COL",
+        "natoCode": "OF-5"
+      },
+      {
+        "rank": "Brigadier General",
+        "payGrade": "O-7",
+        "abbreviation": "BG",
+        "natoCode": "OF-6"
+      },
+      {
+        "rank": "Major General",
+        "payGrade": "O-8",
+        "abbreviation": "MG",
+        "natoCode": "OF-7"
+      },
+      {
+        "rank": "Lieutenant General",
+        "payGrade": "O-9",
+        "abbreviation": "LTG",
+        "natoCode": "OF-8"
+      },
+      {
+        "rank": "General",
+        "payGrade": "O-10",
+        "abbreviation": "GEN",
+        "natoCode": "OF-9"
+      },
+      {
+        "rank": "General of the Army",
+        "payGrade": "Special",
+        "abbreviation": "GA",
+        "natoCode": "OF-10"
+      }
+    ]
+  }
+}
