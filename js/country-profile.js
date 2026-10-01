@@ -4,7 +4,7 @@ async function loadCountryProfile() {
   try {
     const [overviewResponse, economyResponse] = await Promise.all([
       fetch("../../data/virellia/overview.json?v=3", { cache: "no-store" }),
-      fetch("../../data/virellia/economy.json?v=1", { cache: "no-store" })
+      fetch("../../data/virellia/economy.json?v=2", { cache: "no-store" })
     ]);
 
     if (!overviewResponse.ok || !economyResponse.ok) {
@@ -21,9 +21,42 @@ async function loadCountryProfile() {
     const getValue = (path) =>
       path.split(".").reduce((value, key) => value?.[key], data);
 
+    const formatCompactCurrency = (value) => {
+      if (value >= 1_000_000_000_000) {
+        return "$" + (value / 1_000_000_000_000).toLocaleString("en-US", {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 3
+        }) + " trillion";
+      }
+
+      if (value >= 1_000_000_000) {
+        return "$" + (value / 1_000_000_000).toLocaleString("en-US", {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 3
+        }) + " billion";
+      }
+
+      return "$" + Number(value).toLocaleString("en-US");
+    };
+
+    const economicCurrencyFields = new Set([
+      "economy.economicScale.gdpPerCapita",
+      "economy.economicScale.gdpPpp",
+      "economy.economicScale.foreignReserves",
+      "economy.economicScale.nationalDebt",
+      "economy.economicScale.governmentRevenue",
+      "economy.economicScale.governmentExpenditures",
+      "economy.economicScale.exportsWorth",
+      "economy.economicScale.importsWorth"
+    ]);
+
     const formatValue = (value, field) => {
       if (value === null || value === undefined || value === "") {
         return "To be added";
+      }
+
+      if (economicCurrencyFields.has(field)) {
+        return formatCompactCurrency(value);
       }
 
       if (field === "gdp" || field === "defenseBudget") {
@@ -41,6 +74,27 @@ async function loadCountryProfile() {
           minimumFractionDigits: 2,
           maximumFractionDigits: 2
         }) + "%";
+      }
+
+      if (field === "economy.economicScale.debtToGdpRatio") {
+        return Number(value).toLocaleString("en-US", {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1
+        }) + "%";
+      }
+
+      if (field === "economy.economicScale.inflation") {
+        return Number(value).toLocaleString("en-US", {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1
+        }) + "%";
+      }
+
+      if (field === "economy.economicScale.exportScore" || field === "economy.economicScale.importScore") {
+        return Number(value).toLocaleString("en-US", {
+          minimumFractionDigits: 1,
+          maximumFractionDigits: 1
+        }) + " / 100";
       }
 
       if (field.startsWith("defenseFunding.") && typeof value === "number") {
