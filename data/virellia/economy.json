@@ -152,5 +152,21 @@
       "Guiana Shield",
       "Northern Venezuela–Colombia"
     ]
+  },
+  "warSustainment": {
+    "overview": "Virellia is capable of sustaining a major conventional war for years, supported by a vast industrial base, extensive strategic resources, and a large overseas military network. Its peacetime production profile, however, is stronger in heavy industry and raw materials than in expendable munitions, making stockpile depth and wartime industrial conversion especially important during a prolonged high-intensity conflict.",
+    "longWarCapacity": "During the opening year of a major war, Virellian operations would rely heavily on existing military stockpiles. As a conflict continued, overall endurance would increasingly depend on the speed and effectiveness with which national industry could be shifted from peacetime output to wartime production.",
+    "mobilization": "Virellia can rapidly expand total military personnel through wartime legislation. These measures also allow the government to redirect substantial portions of civilian industrial capacity toward military requirements.",
+    "industrialConversion": "Wartime conversion can encompass shipyards, electronics manufacturers, vehicle plants, aircraft manufacturers, heavy-industry facilities, and other civilian production centers capable of supporting military output, repair, and replacement.",
+    "overseasPosture": "The Virellian Military maintains a substantial overseas presence, with bases and deployed forces across Europe, the Middle East, Asia, the Pacific, Africa, and South America. This global posture supports forward logistics and power projection, while also increasing the sustainment demands of a prolonged conflict.",
+    "strategicDeterrence": "Virellia maintains a large nuclear arsenal and a robust strategic deterrent. Within the Vortexia scenario, only Virellia, the United States, and Woolia possess nuclear weapons, giving Virellia a major strategic capability in conflicts involving other nuclear-armed states.",
+    "keyFactors": [
+      "Large heavy-industrial and raw-material base",
+      "Strong dependence on existing stockpiles during the opening phase of a major war",
+      "Ability to expand military manpower through wartime legislation",
+      "Authority to redirect civilian industry toward wartime production",
+      "Global network of overseas bases and deployed forces",
+      "Large nuclear arsenal and strategic deterrent"
+    ]
   }
 }
