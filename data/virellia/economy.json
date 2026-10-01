@@ -73,5 +73,23 @@
       "spaceSystems": "90–190 space systems yearly.",
       "electronics": "34,000–49,000 systems yearly, including AESA radars, electronic-warfare systems, radios, datalinks, computers, and sensors."
     }
+  },
+  "economicScale": {
+    "gdpPerCapita": 92405,
+    "gdpPpp": 38400000000000,
+    "foreignReserves": 754300000000,
+    "nationalDebt": 38500000000000,
+    "debtToGdpRatio": 105.5,
+    "governmentRevenue": 4300000000000,
+    "governmentExpenditures": 3900000000000,
+    "exportsWorth": 2900000000000,
+    "importsWorth": 1700000000000,
+    "exportScore": 97.4,
+    "importScore": 72.3,
+    "scoreScaleNote": "Trade-volume scores use a 0–100 scale. Higher scores indicate greater export or import activity.",
+    "currencyStrength": "Global reserve currency used worldwide as an accepted medium of exchange. It is the tenth most valuable currency in terms of unit value.",
+    "inflation": 1.9,
+    "industrialOutput": "Very High",
+    "manufacturingShareOfGdp": "10.3%–10.9%"
   }
 }
