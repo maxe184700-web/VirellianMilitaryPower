@@ -4,7 +4,7 @@ async function loadCountryProfile() {
   try {
     const [overviewResponse, economyResponse] = await Promise.all([
       fetch("../../data/virellia/overview.json?v=3", { cache: "no-store" }),
-      fetch("../../data/virellia/economy.json?v=2", { cache: "no-store" })
+      fetch("../../data/virellia/economy.json?v=3", { cache: "no-store" })
     ]);
 
     if (!overviewResponse.ok || !economyResponse.ok) {
