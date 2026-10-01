@@ -27,7 +27,7 @@ async function loadArmyProfile() {
   try {
     const [overviewResponse, tanksResponse, personnelResponse] = await Promise.all([
       fetch("../../../data/virellia/army/overview.json?v=2", { cache: "no-store" }),
-      fetch("../../../data/virellia/army/tanks.json?v=1", { cache: "no-store" }),
+      fetch("../../../data/virellia/army/tanks.json?v=2", { cache: "no-store" }),
       fetch("../../../data/virellia/army/personnel.json?v=2", { cache: "no-store" })
     ]);
 
@@ -49,6 +49,13 @@ async function loadArmyProfile() {
     tankFields.forEach((element) => {
       const field = element.dataset.tankField;
       element.textContent = formatValue(getValue(tanks, field), field);
+    });
+
+    document.querySelectorAll("[data-tank-image]").forEach((image) => {
+      const source = getValue(tanks, image.dataset.tankImage);
+      if (source) {
+        image.src = source;
+      }
     });
 
     personnelFields.forEach((element) => {
