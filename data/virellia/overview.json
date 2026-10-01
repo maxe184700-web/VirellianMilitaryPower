@@ -9,7 +9,7 @@
   "militaryRank": 1,
   "military": {
     "totalAircraft": 15116,
-    "combatAircraft": null,
+    "combatAircraft": 2996,
     "mainBattleTanks": 5970,
     "armoredVehicles": 385000,
     "navalVessels": 417,
