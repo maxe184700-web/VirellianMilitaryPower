@@ -1,0 +1,18 @@
+{
+  "officialName": "Virellian Army",
+  "headquarters": "Virellian Army Central Command Base, Phoenix, Arizona",
+  "founded": "July 7, 1859",
+  "commanderTitle": "General of the Army",
+  "commander": "Akihiko Donato Luis",
+  "annualFunding": 212000000000,
+  "activePersonnel": null,
+  "reservePersonnel": null,
+  "forceSnapshot": {
+    "mainBattleTanks": 5970,
+    "armoredVehicles": 385000,
+    "artillerySystems": null,
+    "armyAircraft": null,
+    "majorCommands": null,
+    "majorBases": null
+  }
+}
