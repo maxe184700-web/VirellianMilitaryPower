@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../css/style.css?v=2">
   <link rel="stylesheet" href="../../../css/country.css?v=11">
-  <link rel="stylesheet" href="../../../css/branch.css?v=3">
+  <link rel="stylesheet" href="../../../css/branch.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -208,7 +208,7 @@
         </div>
 
         <div class="branch-placeholder-grid">
-          <article class="branch-active-category"><span>01</span><h3>Main Battle Tanks</h3><p><strong data-tank-field="totalTankUnits">To be added</strong> tanks across the current inventory.</p><a class="branch-status" href="#tank-fleet">View tank fleet</a></article>
+          <article class="branch-active-category equipment-toggle-card" role="button" tabindex="0" aria-expanded="false" aria-controls="tank-fleet" data-equipment-target="tank-fleet"><span>01</span><h3>Main Battle Tanks</h3><p><strong data-tank-field="totalTankUnits">To be added</strong> tanks across the current inventory.</p><em class="branch-status" data-equipment-label>Click for details</em></article>
           <article><span>02</span><h3>Armored Vehicles</h3><p>IFVs, APCs, reconnaissance vehicles, MRAPs, and specialized armor.</p><em class="branch-status">Coming soon</em></article>
           <article><span>03</span><h3>Artillery</h3><p>Self-propelled, towed, rocket artillery, mortars, and tactical fires.</p><em class="branch-status">Coming soon</em></article>
           <article><span>04</span><h3>Air Defense</h3><p>Long, medium, and short-range air-defense systems and supporting radar.</p><em class="branch-status">Coming soon</em></article>
@@ -216,7 +216,7 @@
           <article><span>06</span><h3>Support Vehicles</h3><p>Logistics, engineering, recovery, bridging, and other support systems.</p><em class="branch-status">Coming soon</em></article>
         </div>
 
-        <section id="tank-fleet" class="tank-fleet">
+        <section id="tank-fleet" class="tank-fleet" hidden>
           <div class="tank-fleet-heading">
             <div>
               <p class="kicker">ARMORED FORCE</p>
@@ -353,6 +353,6 @@
   </footer>
 
   <script src="../../../js/main.js?v=2"></script>
-  <script src="../../../js/army-profile.js?v=2"></script>
+  <script src="../../../js/army-profile.js?v=3"></script>
 </body>
 </html>
