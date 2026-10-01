@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=8">
+  <link rel="stylesheet" href="../../css/country.css?v=9">
 </head>
 <body>
   <header class="site-header">
@@ -155,11 +155,18 @@
             <p>Commercial shipbuilding and aerospace, civilian vehicles, electronics, chemicals, machine tools, steel, and large-scale production capacity.</p>
             <em data-toggle-label>Click for details</em>
           </article>
-          <article>
+          <article
+            class="economy-toggle-card"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="energy-resources-detail"
+            data-toggle-target="energy-resources-detail"
+          >
             <span>04</span>
             <h3>Energy &amp; Resources</h3>
-            <p>Energy generation, uranium, fuel supplies, strategic minerals, and other resources supporting national industry.</p>
-            <em>Coming soon</em>
+            <p>Energy generation, nuclear power, fuel production, strategic reserves, and mineral resources supporting national industry.</p>
+            <em data-toggle-label>Click for details</em>
           </article>
           <article
             class="economy-toggle-card"
@@ -288,6 +295,109 @@
               <h4>Large Civilian Manufacturers Supporting Wartime Production</h4>
               <ul data-profile-list="economy.industrialBase.civilianManufacturers"></ul>
             </div>
+          </div>
+        </section>
+
+        <section id="energy-resources-detail" class="energy-resources-block" aria-labelledby="energy-resources-title" hidden>
+          <div class="energy-resources-heading">
+            <div>
+              <p class="kicker">ENERGY SECURITY &amp; STRATEGIC RESOURCES</p>
+              <h3 id="energy-resources-title">Energy &amp; Resources</h3>
+            </div>
+            <div class="energy-summary">
+              <div>
+                <span>Total Electricity Generation</span>
+                <strong data-profile-field="economy.energyResources.electricity.totalGeneration">To be added</strong>
+              </div>
+              <div>
+                <span>Grid Capacity</span>
+                <strong data-profile-field="economy.energyResources.electricity.gridCapacity">To be added</strong>
+              </div>
+              <div>
+                <span>Domestic Energy Supply</span>
+                <strong data-profile-field="economy.energyResources.electricity.domesticEnergyShare">To be added</strong>
+              </div>
+              <div>
+                <span>Grid Reliability</span>
+                <strong data-profile-field="economy.energyResources.electricity.gridReliability">To be added</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="energy-overview-copy" data-profile-field="economy.energyResources.overview">To be added</p>
+
+          <div class="energy-resource-groups">
+            <section class="energy-group">
+              <h4>Electricity Generation &amp; Grid</h4>
+              <div class="energy-data-grid">
+                <div><span>Total Electricity Generation</span><strong data-profile-field="economy.energyResources.electricity.totalGeneration">To be added</strong></div>
+                <div><span>Electrical Grid Capacity</span><strong data-profile-field="economy.energyResources.electricity.gridCapacity">To be added</strong></div>
+                <div><span>Grid Reliability</span><strong data-profile-field="economy.energyResources.electricity.gridReliability">To be added</strong></div>
+                <div><span>Domestic Energy Production</span><strong data-profile-field="economy.energyResources.electricity.domesticEnergyShare">To be added</strong></div>
+                <div><span>Energy Imports</span><strong data-profile-field="economy.energyResources.electricity.importedEnergyShare">To be added</strong></div>
+                <div><span>Nuclear Generation Capacity</span><strong data-profile-field="economy.energyResources.electricity.nuclearCapacity">To be added</strong></div>
+                <div><span>Nuclear Reactors</span><strong data-profile-field="economy.energyResources.electricity.nuclearReactors">To be added</strong></div>
+              </div>
+
+              <div class="generation-mix-grid">
+                <div><span>Coal</span><strong data-profile-field="economy.energyResources.electricity.generationMix.coal">To be added</strong></div>
+                <div><span>Natural Gas</span><strong data-profile-field="economy.energyResources.electricity.generationMix.naturalGas">To be added</strong></div>
+                <div><span>Nuclear</span><strong data-profile-field="economy.energyResources.electricity.generationMix.nuclear">To be added</strong></div>
+                <div><span>Hydroelectric</span><strong data-profile-field="economy.energyResources.electricity.generationMix.hydro">To be added</strong></div>
+                <div><span>Solar</span><strong data-profile-field="economy.energyResources.electricity.generationMix.solar">To be added</strong></div>
+                <div><span>Wind</span><strong data-profile-field="economy.energyResources.electricity.generationMix.wind">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="energy-group">
+              <h4>Fuel Production &amp; Strategic Reserves</h4>
+              <div class="energy-data-grid">
+                <div><span>Crude Oil Production</span><strong data-profile-field="economy.energyResources.fuelProduction.crudeOil">To be added</strong></div>
+                <div><span>Natural Gas Production</span><strong data-profile-field="economy.energyResources.fuelProduction.naturalGas">To be added</strong></div>
+                <div><span>Oil Refining Capacity</span><strong data-profile-field="economy.energyResources.fuelProduction.oilRefining">To be added</strong></div>
+                <div><span>Coal Production</span><strong data-profile-field="economy.energyResources.fuelProduction.coal">To be added</strong></div>
+                <div><span>Strategic Petroleum Reserve</span><strong data-profile-field="economy.energyResources.fuelProduction.strategicPetroleumReserve">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="energy-group">
+              <h4>Strategic Mineral Production</h4>
+              <div class="energy-data-grid">
+                <div><span>Uranium Production Range</span><strong data-profile-field="economy.energyResources.mineralProduction.uraniumRange">To be added</strong></div>
+                <div><span>Uranium Annual Benchmark</span><strong data-profile-field="economy.energyResources.mineralProduction.uraniumAnnualBenchmark">To be added</strong></div>
+                <div><span>Copper Production</span><strong data-profile-field="economy.energyResources.mineralProduction.copper">To be added</strong></div>
+                <div><span>Nickel Production</span><strong data-profile-field="economy.energyResources.mineralProduction.nickel">To be added</strong></div>
+                <div><span>Bauxite Production</span><strong data-profile-field="economy.energyResources.mineralProduction.bauxite">To be added</strong></div>
+                <div><span>Iron Ore Production</span><strong data-profile-field="economy.energyResources.mineralProduction.ironOre">To be added</strong></div>
+                <div><span>Lithium Production</span><strong data-profile-field="economy.energyResources.mineralProduction.lithium">To be added</strong></div>
+                <div><span>Titanium Mineral Production</span><strong data-profile-field="economy.energyResources.mineralProduction.titanium">To be added</strong></div>
+                <div><span>Rare-Earth Production</span><strong data-profile-field="economy.energyResources.mineralProduction.rareEarths">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="energy-group">
+              <h4>National Resource Reserves</h4>
+              <div class="energy-data-grid">
+                <div><span>Copper Reserves</span><strong data-profile-field="economy.energyResources.reserves.copper">To be added</strong></div>
+                <div><span>Lithium Reserves</span><strong data-profile-field="economy.energyResources.reserves.lithium">To be added</strong></div>
+                <div><span>Nickel Reserves</span><strong data-profile-field="economy.energyResources.reserves.nickel">To be added</strong></div>
+                <div><span>Titanium Reserves</span><strong data-profile-field="economy.energyResources.reserves.titanium">To be added</strong></div>
+                <div><span>Bauxite Reserves</span><strong data-profile-field="economy.energyResources.reserves.bauxite">To be added</strong></div>
+                <div><span>Iron Ore Reserves</span><strong data-profile-field="economy.energyResources.reserves.ironOre">To be added</strong></div>
+                <div><span>Natural Gas Reserves</span><strong data-profile-field="economy.energyResources.reserves.naturalGas">To be added</strong></div>
+                <div><span>Crude Oil Reserves</span><strong data-profile-field="economy.energyResources.reserves.crudeOil">To be added</strong></div>
+                <div><span>Coal Reserves</span><strong data-profile-field="economy.energyResources.reserves.coal">To be added</strong></div>
+                <div><span>Uranium Reserves</span><strong data-profile-field="economy.energyResources.reserves.uranium">To be added</strong></div>
+                <div><span>Rare-Earth Reserves</span><strong data-profile-field="economy.energyResources.reserves.rareEarths">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="energy-group">
+              <h4>Major Resource-Producing Regions</h4>
+              <div class="resource-region-panel">
+                <ul data-profile-list="economy.energyResources.majorProducingRegions"></ul>
+              </div>
+            </section>
           </div>
         </section>
 
@@ -585,6 +695,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=9"></script>
+  <script src="../../js/country-profile.js?v=10"></script>
 </body>
 </html>
