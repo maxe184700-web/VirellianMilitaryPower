@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../../css/style.css?v=2">
   <link rel="stylesheet" href="../../../css/country.css?v=11">
-  <link rel="stylesheet" href="../../../css/branch.css?v=1">
+  <link rel="stylesheet" href="../../../css/branch.css?v=2">
 </head>
 <body>
   <header class="site-header">
@@ -71,32 +71,32 @@
           <p class="kicker">BRANCH OVERVIEW</p>
           <h2>Virellian Army</h2>
         </div>
-        <p>This branch page is ready for the official Army data you are building.</p>
+        <p>Land-warfare branch of the Virellian military, responsible for large-scale ground combat, armored operations, fires, air defense, engineering, and sustainment.</p>
       </div>
 
       <div class="branch-overview-grid">
         <div class="branch-panel">
           <h3>Branch Data</h3>
           <div class="info-table">
-            <div><span>Official Name</span><strong>Virellian Army</strong></div>
-            <div><span>Active Personnel</span><strong>To be added</strong></div>
-            <div><span>Reserve Personnel</span><strong>To be added</strong></div>
-            <div><span>Headquarters</span><strong>To be added</strong></div>
-            <div><span>Founded</span><strong>To be added</strong></div>
-            <div><span>Commander</span><strong>To be added</strong></div>
-            <div><span>Annual Funding</span><strong>$212 billion</strong></div>
+            <div><span>Official Name</span><strong data-army-field="officialName">Virellian Army</strong></div>
+            <div><span>Active Personnel</span><strong data-army-field="activePersonnel">To be added</strong></div>
+            <div><span>Reserve Personnel</span><strong data-army-field="reservePersonnel">To be added</strong></div>
+            <div><span>Headquarters</span><strong data-army-field="headquarters">To be added</strong></div>
+            <div><span>Founded</span><strong data-army-field="founded">To be added</strong></div>
+            <div><span>General of the Army</span><strong data-army-field="commander">To be added</strong></div>
+            <div><span>Annual Funding</span><strong data-army-field="annualFunding">To be added</strong></div>
           </div>
         </div>
 
         <div class="branch-panel">
           <h3>Force Snapshot</h3>
           <div class="info-table">
-            <div><span>Main Battle Tanks</span><strong>5,970</strong></div>
-            <div><span>Armored Vehicles</span><strong>385,000</strong></div>
-            <div><span>Artillery Systems</span><strong>To be added</strong></div>
-            <div><span>Army Aircraft</span><strong>To be added</strong></div>
-            <div><span>Major Commands</span><strong>To be added</strong></div>
-            <div><span>Major Bases</span><strong>To be added</strong></div>
+            <div><span>Main Battle Tanks</span><strong data-army-field="forceSnapshot.mainBattleTanks">To be added</strong></div>
+            <div><span>Armored Vehicles</span><strong data-army-field="forceSnapshot.armoredVehicles">To be added</strong></div>
+            <div><span>Artillery Systems</span><strong data-army-field="forceSnapshot.artillerySystems">To be added</strong></div>
+            <div><span>Army Aircraft</span><strong data-army-field="forceSnapshot.armyAircraft">To be added</strong></div>
+            <div><span>Major Commands</span><strong data-army-field="forceSnapshot.majorCommands">To be added</strong></div>
+            <div><span>Major Bases</span><strong data-army-field="forceSnapshot.majorBases">To be added</strong></div>
           </div>
         </div>
       </div>
@@ -137,13 +137,80 @@
         </div>
 
         <div class="branch-placeholder-grid">
-          <article><span>01</span><h3>Main Battle Tanks</h3><p>Tank classes, variants, quantities, and specifications.</p><em class="branch-status">Coming soon</em></article>
+          <article class="branch-active-category"><span>01</span><h3>Main Battle Tanks</h3><p><strong data-tank-field="totalTankUnits">To be added</strong> tanks across the current inventory.</p><a class="branch-status" href="#tank-fleet">View tank fleet</a></article>
           <article><span>02</span><h3>Armored Vehicles</h3><p>IFVs, APCs, reconnaissance vehicles, MRAPs, and specialized armor.</p><em class="branch-status">Coming soon</em></article>
           <article><span>03</span><h3>Artillery</h3><p>Self-propelled, towed, rocket artillery, mortars, and tactical fires.</p><em class="branch-status">Coming soon</em></article>
           <article><span>04</span><h3>Air Defense</h3><p>Long, medium, and short-range air-defense systems and supporting radar.</p><em class="branch-status">Coming soon</em></article>
           <article><span>05</span><h3>Infantry Weapons</h3><p>Rifles, machine guns, sniper systems, anti-armor weapons, and MANPADS.</p><em class="branch-status">Coming soon</em></article>
           <article><span>06</span><h3>Support Vehicles</h3><p>Logistics, engineering, recovery, bridging, and other support systems.</p><em class="branch-status">Coming soon</em></article>
         </div>
+
+        <section id="tank-fleet" class="tank-fleet">
+          <div class="tank-fleet-heading">
+            <div>
+              <p class="kicker">ARMORED FORCE</p>
+              <h3>Main Battle Tank Fleet</h3>
+            </div>
+            <div class="tank-total-stat">
+              <span>Total Tank Units</span>
+              <strong data-tank-field="totalTankUnits">To be added</strong>
+            </div>
+          </div>
+
+          <article class="tank-class-card">
+            <div class="tank-class-header">
+              <div>
+                <p class="kicker">PRIMARY LEGACY MAIN BATTLE TANK</p>
+                <h3 data-tank-field="classes.raethis.designation">MBT-19 Raethis</h3>
+                <p class="tank-status" data-tank-field="classes.raethis.status">To be added</p>
+              </div>
+              <div class="tank-class-count">
+                <span>Total Units</span>
+                <strong data-tank-field="classes.raethis.totalUnits">To be added</strong>
+              </div>
+            </div>
+
+            <div class="tank-variant-grid">
+              <div><span>Raethis-1</span><strong data-tank-field="classes.raethis.variants.Raethis-1">To be added</strong></div>
+              <div><span>Raethis-2</span><strong data-tank-field="classes.raethis.variants.Raethis-2">To be added</strong></div>
+              <div><span>Raethis-3</span><strong data-tank-field="classes.raethis.variants.Raethis-3">To be added</strong></div>
+              <div><span>Raethis-4</span><strong data-tank-field="classes.raethis.variants.Raethis-4">To be added</strong></div>
+              <div><span>Raethis-5</span><strong data-tank-field="classes.raethis.variants.Raethis-5">To be added</strong></div>
+            </div>
+
+            <div class="tank-history-copy">
+              <p data-tank-field="classes.raethis.history">To be added</p>
+              <p data-tank-field="classes.raethis.modernization">To be added</p>
+            </div>
+          </article>
+
+          <article class="tank-class-card">
+            <div class="tank-class-header">
+              <div>
+                <p class="kicker">NEXT-GENERATION MAIN BATTLE TANK</p>
+                <h3 data-tank-field="classes.lynx.designation">MBT-20 Lynx</h3>
+                <p class="tank-status" data-tank-field="classes.lynx.status">To be added</p>
+              </div>
+              <div class="tank-class-count">
+                <span>In Service</span>
+                <strong data-tank-field="classes.lynx.inService">To be added</strong>
+              </div>
+            </div>
+
+            <div class="tank-procurement-grid">
+              <div><span>In Service</span><strong data-tank-field="classes.lynx.inService">To be added</strong></div>
+              <div><span>On Order</span><strong data-tank-field="classes.lynx.onOrder">To be added</strong></div>
+              <div><span>Initial Contract</span><strong data-tank-field="classes.lynx.initialContractTotal">To be added</strong></div>
+              <div><span>Currently Planned</span><strong data-tank-field="classes.lynx.planned">To be added</strong></div>
+            </div>
+
+            <div class="tank-history-copy">
+              <p data-tank-field="classes.lynx.history">To be added</p>
+              <p data-tank-field="classes.lynx.procurement">To be added</p>
+            </div>
+          </article>
+        </section>
+
       </div>
     </section>
 
@@ -215,5 +282,6 @@
   </footer>
 
   <script src="../../../js/main.js?v=2"></script>
+  <script src="../../../js/army-profile.js?v=1"></script>
 </body>
 </html>
