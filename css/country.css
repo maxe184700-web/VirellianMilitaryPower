@@ -521,3 +521,26 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.defense-production-groups {
+  display: grid;
+  gap: 18px;
+}
+
+.production-group h4 {
+  margin: 0;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  background: #0d141a;
+  color: var(--gold);
+  font-family: "Oswald", sans-serif;
+  font-size: .92rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.production-group .defense-production-grid {
+  margin: 0;
+}
