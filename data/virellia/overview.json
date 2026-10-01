@@ -1,0 +1,17 @@
+{
+  "officialName": "Virellian Republic",
+  "capital": null,
+  "population": null,
+  "gdp": null,
+  "defenseBudget": null,
+  "activePersonnel": null,
+  "reservePersonnel": null,
+  "military": {
+    "totalAircraft": null,
+    "combatAircraft": null,
+    "mainBattleTanks": null,
+    "armoredVehicles": null,
+    "navalVessels": null,
+    "submarines": null
+  }
+}
