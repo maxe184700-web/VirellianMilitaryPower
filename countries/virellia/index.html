@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=6">
+  <link rel="stylesheet" href="../../css/country.css?v=7">
 </head>
 <body>
   <header class="site-header">
@@ -298,24 +298,70 @@
         </section>
 
         <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title" hidden>
-        <div class="defense-spending-heading">
-          <div>
-            <p class="kicker">DEFENSE FINANCES</p>
-            <h3 id="defense-spending-title">Defense Spending</h3>
-          </div>
-          <div class="defense-budget-stats">
+          <div class="defense-spending-heading">
             <div>
-              <span>Defense Budget</span>
-              <strong data-profile-field="defenseBudget">To be added</strong>
+              <p class="kicker">DEFENSE FINANCES</p>
+              <h3 id="defense-spending-title">Defense Spending</h3>
             </div>
-            <div>
-              <span>Share of GDP</span>
-              <strong data-profile-field="defenseBudgetShare">To be added</strong>
+            <div class="defense-budget-stats defense-budget-stats-expanded">
+              <div>
+                <span>Base Defense Budget</span>
+                <strong data-profile-field="defenseBudget">To be added</strong>
+              </div>
+              <div>
+                <span>Share of GDP</span>
+                <strong data-profile-field="defenseBudgetShare">To be added</strong>
+              </div>
+              <div>
+                <span>Typical Supplemental Funding</span>
+                <strong data-profile-field="defenseFunding.supplementalTotal">To be added</strong>
+              </div>
+              <div>
+                <span>Combined Typical Funding</span>
+                <strong data-profile-field="defenseFunding.combinedTypicalTotal">To be added</strong>
+              </div>
             </div>
           </div>
-        </div>
-        <p class="defense-spending-copy" data-profile-field="defenseSpendingOverview">To be added</p>
-      </section>
+
+          <p class="defense-spending-copy" data-profile-field="defenseSpendingOverview">To be added</p>
+          <p class="defense-funding-note">The base defense budget is distributed across Virellia's military branches as their usual annual funding. Supplemental appropriations are additional funding provided beyond the standard branch allocations.</p>
+
+          <div class="defense-funding-groups">
+            <section class="funding-group">
+              <h4>Usual Annual Branch Funding</h4>
+              <div class="funding-table">
+                <div><span>Army</span><strong data-profile-field="defenseFunding.usual.army">To be added</strong></div>
+                <div><span>Navy</span><strong data-profile-field="defenseFunding.usual.navy">To be added</strong></div>
+                <div><span>Marine Corps</span><strong data-profile-field="defenseFunding.usual.marineCorps">To be added</strong></div>
+                <div><span>Air Force</span><strong data-profile-field="defenseFunding.usual.airForce">To be added</strong></div>
+                <div><span>Coast Guard</span><strong data-profile-field="defenseFunding.usual.coastGuard">To be added</strong></div>
+                <div><span>National Guard</span><strong data-profile-field="defenseFunding.usual.nationalGuard">To be added</strong></div>
+                <div><span>Space Force</span><strong data-profile-field="defenseFunding.usual.spaceForce">To be added</strong></div>
+                <div><span>Military Police</span><strong data-profile-field="defenseFunding.usual.militaryPolice">To be added</strong></div>
+                <div><span>Cyber Defense Corps</span><strong data-profile-field="defenseFunding.usual.cyberDefenseCorps">To be added</strong></div>
+                <div><span>Strategic Command</span><strong data-profile-field="defenseFunding.usual.strategicCommand">To be added</strong></div>
+                <div class="funding-total"><span>Total Base Allocation</span><strong data-profile-field="defenseFunding.usualTotal">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="funding-group">
+              <h4>Typical Supplemental Branch Funding</h4>
+              <div class="funding-table">
+                <div><span>Army</span><strong data-profile-field="defenseFunding.supplemental.army">To be added</strong></div>
+                <div><span>Navy</span><strong data-profile-field="defenseFunding.supplemental.navy">To be added</strong></div>
+                <div><span>Marine Corps</span><strong data-profile-field="defenseFunding.supplemental.marineCorps">To be added</strong></div>
+                <div><span>Air Force</span><strong data-profile-field="defenseFunding.supplemental.airForce">To be added</strong></div>
+                <div><span>Coast Guard</span><strong data-profile-field="defenseFunding.supplemental.coastGuard">To be added</strong></div>
+                <div><span>National Guard</span><strong data-profile-field="defenseFunding.supplemental.nationalGuard">To be added</strong></div>
+                <div><span>Space Force</span><strong data-profile-field="defenseFunding.supplemental.spaceForce">To be added</strong></div>
+                <div><span>Military Police</span><strong data-profile-field="defenseFunding.supplemental.militaryPolice">To be added</strong></div>
+                <div><span>Cyber Defense Corps</span><strong data-profile-field="defenseFunding.supplemental.cyberDefenseCorps">To be added</strong></div>
+                <div><span>Strategic Command</span><strong data-profile-field="defenseFunding.supplemental.strategicCommand">To be added</strong></div>
+                <div class="funding-total"><span>Total Supplemental Funding</span><strong data-profile-field="defenseFunding.supplementalTotal">To be added</strong></div>
+              </div>
+            </section>
+          </div>
+        </section>
       </div>
     </section>
 
@@ -444,6 +490,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=7"></script>
+  <script src="../../js/country-profile.js?v=8"></script>
 </body>
 </html>
