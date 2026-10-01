@@ -2,16 +2,9 @@
   "industrialBase": {
     "overview": "Virellia possesses one of the world's largest and most capable industrial bases, with particularly strong domestic capacity in shipbuilding, aerospace manufacturing, heavy machinery, electronics, energy systems, and vehicle production.",
     "production": {
-      "shipbuildingMilitary": "10–25 Navy vessels yearly, depending on orders, conditions, and global situations.",
       "shipbuildingCommercial": "23 commercial vessels yearly.",
-      "aerospaceMilitary": "473–523 military aircraft yearly, depending on orders, conditions, and global situations.",
       "aerospaceCommercial": "1,005 commercial aircraft yearly.",
-      "automotiveMilitary": "15,000–20,000 vehicles yearly, depending on orders, conditions, and global situations.",
       "automotiveCivilian": "10.3 million civilian vehicles yearly.",
-      "missiles": "13,000 missiles yearly across all types.",
-      "smallArmsAmmunition": "4–5 billion rounds yearly.",
-      "tankShells": "8,000–13,000 shells yearly.",
-      "artilleryShells": "596,000 shells yearly.",
       "electronicsSemiconductors": "$348.9 billion VD; Virellia is the world's largest producer, accounting for 65%–68% of global production.",
       "chemicalIndustry": "895 billion metric tons ($598.3 billion VD).",
       "machineTools": "873,000 units ($24.4 billion VD).",
@@ -36,6 +29,18 @@
     "supplyChain": {
       "domesticPercent": 56,
       "importedPercent": 44
+    }
+  },
+  "defenseProduction": {
+    "overview": "Virellia maintains a large-scale domestic defense-production system capable of producing major naval vessels, military aircraft, armored and support vehicles, missiles, and large quantities of ammunition.",
+    "production": {
+      "navalVessels": "10–25 Navy vessels yearly, depending on orders, conditions, and global situations.",
+      "militaryAircraft": "473–523 military aircraft yearly, depending on orders, conditions, and global situations.",
+      "militaryVehicles": "15,000–20,000 vehicles yearly, depending on orders, conditions, and global situations.",
+      "missiles": "13,000 missiles yearly across all types.",
+      "smallArmsAmmunition": "4–5 billion rounds yearly.",
+      "tankShells": "8,000–13,000 shells yearly.",
+      "artilleryShells": "596,000 shells yearly."
     }
   }
 }
