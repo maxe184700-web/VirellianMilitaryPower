@@ -153,3 +153,164 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.branch-active-category {
+  background: #172129 !important;
+}
+
+.branch-active-category p strong {
+  color: var(--text);
+}
+
+.branch-active-category .branch-status {
+  text-decoration: none;
+}
+
+.tank-fleet {
+  margin-top: 28px;
+}
+
+.tank-fleet-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 14px;
+}
+
+.tank-fleet-heading h3 {
+  margin-top: 0;
+}
+
+.tank-total-stat,
+.tank-class-count {
+  min-width: 160px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  background: #10171d;
+}
+
+.tank-total-stat span,
+.tank-class-count span {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: .67rem;
+  font-weight: 700;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.tank-total-stat strong,
+.tank-class-count strong {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.18rem;
+}
+
+.tank-class-card {
+  margin-top: 14px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  background: #10171d;
+}
+
+.tank-class-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+.tank-class-header h3 {
+  margin: 3px 0 7px;
+  font-size: 1.5rem;
+}
+
+.tank-status {
+  margin: 0;
+  color: var(--accent);
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.tank-variant-grid,
+.tank-procurement-grid {
+  display: grid;
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.tank-variant-grid {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.tank-procurement-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tank-variant-grid > div,
+.tank-procurement-grid > div {
+  padding: 13px 14px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.tank-variant-grid span,
+.tank-procurement-grid span {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--gold);
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.tank-variant-grid strong,
+.tank-procurement-grid strong {
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+}
+
+.tank-history-copy {
+  display: grid;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.tank-history-copy p {
+  margin: 0;
+  color: #c4ced5;
+  font-size: .82rem;
+  line-height: 1.75;
+}
+
+@media (max-width: 900px) {
+  .tank-variant-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .tank-procurement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 680px) {
+  .tank-fleet-heading,
+  .tank-class-header {
+    flex-direction: column;
+  }
+
+  .tank-total-stat,
+  .tank-class-count {
+    width: 100%;
+  }
+
+  .tank-variant-grid,
+  .tank-procurement-grid {
+    grid-template-columns: 1fr;
+  }
+}
