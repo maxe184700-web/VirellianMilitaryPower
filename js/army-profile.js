@@ -103,3 +103,41 @@ async function loadArmyProfile() {
 }
 
 loadArmyProfile();
+
+
+function initEquipmentToggles() {
+  const toggles = document.querySelectorAll("[data-equipment-target]");
+
+  toggles.forEach((toggle) => {
+    const target = document.getElementById(toggle.dataset.equipmentTarget);
+    const label = toggle.querySelector("[data-equipment-label]");
+
+    if (!target) return;
+
+    const setOpen = (open) => {
+      target.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.classList.toggle("is-open", open);
+
+      if (label) {
+        label.textContent = open ? "Click to hide details" : "Click for details";
+      }
+    };
+
+    const activate = () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setOpen(!isOpen);
+    };
+
+    toggle.addEventListener("click", activate);
+
+    toggle.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activate();
+      }
+    });
+  });
+}
+
+initEquipmentToggles();
