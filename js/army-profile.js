@@ -27,7 +27,7 @@ async function loadArmyProfile() {
   try {
     const [overviewResponse, tanksResponse, personnelResponse] = await Promise.all([
       fetch("../../../data/virellia/army/overview.json?v=2", { cache: "no-store" }),
-      fetch("../../../data/virellia/army/tanks.json?v=3", { cache: "no-store" }),
+      fetch("../../../data/virellia/army/tanks.json?v=4", { cache: "no-store" }),
       fetch("../../../data/virellia/army/personnel.json?v=2", { cache: "no-store" })
     ]);
 
