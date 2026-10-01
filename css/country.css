@@ -544,3 +544,83 @@
 .production-group .defense-production-grid {
   margin: 0;
 }
+
+
+.defense-budget-stats-expanded {
+  grid-template-columns: repeat(2, minmax(165px, 1fr));
+}
+
+.defense-funding-note {
+  margin: 8px 0 22px;
+  max-width: 1000px;
+  color: var(--muted);
+  font-size: .78rem;
+  line-height: 1.65;
+}
+
+.defense-funding-groups {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.funding-group h4 {
+  margin: 0;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-bottom: 0;
+  background: #0d141a;
+  color: var(--gold);
+  font-family: "Oswald", sans-serif;
+  font-size: .92rem;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.funding-table {
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.funding-table > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 11px 13px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  font-size: .78rem;
+}
+
+.funding-table span {
+  color: var(--muted);
+}
+
+.funding-table strong {
+  color: var(--text);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.funding-table .funding-total {
+  background: #1a252d;
+}
+
+.funding-table .funding-total span,
+.funding-table .funding-total strong {
+  color: var(--gold);
+  font-weight: 800;
+}
+
+@media (max-width: 900px) {
+  .defense-funding-groups {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .defense-budget-stats-expanded {
+    grid-template-columns: 1fr;
+  }
+}
