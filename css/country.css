@@ -287,3 +287,14 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.economy-directory p strong {
+  color: var(--text);
+  font-weight: 700;
+}
+
+.economy-directory article:nth-child(1),
+.economy-directory article:nth-child(2) {
+  background: #172129;
+}
