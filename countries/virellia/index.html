@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=7">
+  <link rel="stylesheet" href="../../css/country.css?v=8">
 </head>
 <body>
   <header class="site-header">
@@ -116,11 +116,18 @@
         </div>
 
         <div class="branch-directory economy-directory">
-          <article>
+          <article
+            class="economy-toggle-card"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="economic-scale-detail"
+            data-toggle-target="economic-scale-detail"
+          >
             <span>01</span>
             <h3>Economic Scale</h3>
             <p>Gross domestic product: <strong data-profile-field="gdp">To be added</strong>.</p>
-            <em>Active data</em>
+            <em data-toggle-label>Click for details</em>
           </article>
           <article
             class="economy-toggle-card"
@@ -174,6 +181,70 @@
             <em>Coming soon</em>
           </article>
         </div>
+
+        <section id="economic-scale-detail" class="economic-scale-block" aria-labelledby="economic-scale-title" hidden>
+          <div class="economic-scale-heading">
+            <div>
+              <p class="kicker">MACROECONOMIC PROFILE</p>
+              <h3 id="economic-scale-title">Economic Scale</h3>
+            </div>
+            <div class="economic-scale-summary">
+              <div>
+                <span>GDP</span>
+                <strong data-profile-field="gdp">To be added</strong>
+              </div>
+              <div>
+                <span>GDP Per Capita</span>
+                <strong data-profile-field="economy.economicScale.gdpPerCapita">To be added</strong>
+              </div>
+              <div>
+                <span>GDP (PPP)</span>
+                <strong data-profile-field="economy.economicScale.gdpPpp">To be added</strong>
+              </div>
+              <div>
+                <span>Debt-to-GDP Ratio</span>
+                <strong data-profile-field="economy.economicScale.debtToGdpRatio">To be added</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="economic-scale-groups">
+            <section class="economic-group">
+              <h4>Core Economy &amp; Public Finance</h4>
+              <div class="economic-data-grid">
+                <div><span>Gross Domestic Product</span><strong data-profile-field="gdp">To be added</strong></div>
+                <div><span>GDP Per Capita</span><strong data-profile-field="economy.economicScale.gdpPerCapita">To be added</strong></div>
+                <div><span>GDP at Purchasing Power Parity</span><strong data-profile-field="economy.economicScale.gdpPpp">To be added</strong></div>
+                <div><span>Foreign Exchange Reserves</span><strong data-profile-field="economy.economicScale.foreignReserves">To be added</strong></div>
+                <div><span>National Debt</span><strong data-profile-field="economy.economicScale.nationalDebt">To be added</strong></div>
+                <div><span>Debt-to-GDP Ratio</span><strong data-profile-field="economy.economicScale.debtToGdpRatio">To be added</strong></div>
+                <div><span>Government Revenue</span><strong data-profile-field="economy.economicScale.governmentRevenue">To be added</strong></div>
+                <div><span>Government Expenditures</span><strong data-profile-field="economy.economicScale.governmentExpenditures">To be added</strong></div>
+              </div>
+            </section>
+
+            <section class="economic-group">
+              <h4>International Trade</h4>
+              <div class="economic-data-grid">
+                <div><span>Exports by Value</span><strong data-profile-field="economy.economicScale.exportsWorth">To be added</strong></div>
+                <div><span>Imports by Value</span><strong data-profile-field="economy.economicScale.importsWorth">To be added</strong></div>
+                <div><span>Export Activity Score</span><strong data-profile-field="economy.economicScale.exportScore">To be added</strong></div>
+                <div><span>Import Activity Score</span><strong data-profile-field="economy.economicScale.importScore">To be added</strong></div>
+              </div>
+              <p class="economic-scale-note" data-profile-field="economy.economicScale.scoreScaleNote">To be added</p>
+            </section>
+
+            <section class="economic-group">
+              <h4>Monetary &amp; Industrial Indicators</h4>
+              <div class="economic-data-grid">
+                <div class="economic-wide-row"><span>Currency Position</span><strong data-profile-field="economy.economicScale.currencyStrength">To be added</strong></div>
+                <div><span>Inflation</span><strong data-profile-field="economy.economicScale.inflation">To be added</strong></div>
+                <div><span>Industrial Output</span><strong data-profile-field="economy.economicScale.industrialOutput">To be added</strong></div>
+                <div><span>Manufacturing Share of GDP</span><strong data-profile-field="economy.economicScale.manufacturingShareOfGdp">To be added</strong></div>
+              </div>
+            </section>
+          </div>
+        </section>
 
         <section id="industrial-base-detail" class="industrial-base-block" aria-labelledby="industrial-base-title" hidden>
           <div class="industrial-base-heading">
@@ -514,6 +585,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=8"></script>
+  <script src="../../js/country-profile.js?v=9"></script>
 </body>
 </html>
