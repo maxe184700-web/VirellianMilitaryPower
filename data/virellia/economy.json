@@ -1,0 +1,41 @@
+{
+  "industrialBase": {
+    "overview": "Virellia possesses one of the world's largest and most capable industrial bases, with particularly strong domestic capacity in shipbuilding, aerospace manufacturing, heavy machinery, electronics, energy systems, and vehicle production.",
+    "production": {
+      "shipbuildingMilitary": "10–25 Navy vessels yearly, depending on orders, conditions, and global situations.",
+      "shipbuildingCommercial": "23 commercial vessels yearly.",
+      "aerospaceMilitary": "473–523 military aircraft yearly, depending on orders, conditions, and global situations.",
+      "aerospaceCommercial": "1,005 commercial aircraft yearly.",
+      "automotiveMilitary": "15,000–20,000 vehicles yearly, depending on orders, conditions, and global situations.",
+      "automotiveCivilian": "10.3 million civilian vehicles yearly.",
+      "missiles": "13,000 missiles yearly across all types.",
+      "smallArmsAmmunition": "4–5 billion rounds yearly.",
+      "tankShells": "8,000–13,000 shells yearly.",
+      "artilleryShells": "596,000 shells yearly.",
+      "electronicsSemiconductors": "$348.9 billion VD; Virellia is the world's largest producer, accounting for 65%–68% of global production.",
+      "chemicalIndustry": "895 billion metric tons ($598.3 billion VD).",
+      "machineTools": "873,000 units ($24.4 billion VD).",
+      "railLocomotives": "1,985 rail locomotives and 2.9 million tons of steel.",
+      "industrialRobotics": "48,000 units.",
+      "steel": "877 million metric tons.",
+      "aluminum": "20 million metric tons."
+    },
+    "majorIndustrialRegions": [
+      "Yucatán",
+      "Arizona",
+      "Baja California"
+    ],
+    "civilianManufacturers": [
+      "Neraxis Technologies",
+      "Tekvana Corps",
+      "Fensa Industrial Equipment",
+      "Valkarion Flightworks",
+      "Selkar Commerical Vessels",
+      "Fission Mech-Tech"
+    ],
+    "supplyChain": {
+      "domesticPercent": 56,
+      "importedPercent": 44
+    }
+  }
+}
