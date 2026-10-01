@@ -5,8 +5,8 @@
   "commanderTitle": "General of the Army",
   "commander": "Akihiko Donato Luis",
   "annualFunding": 212000000000,
-  "activePersonnel": null,
-  "reservePersonnel": null,
+  "activePersonnel": 876000,
+  "reservePersonnel": 452000,
   "forceSnapshot": {
     "mainBattleTanks": 5970,
     "armoredVehicles": 385000,
@@ -14,5 +14,7 @@
     "armyAircraft": null,
     "majorCommands": null,
     "majorBases": null
-  }
+  },
+  "motto": "Bring it on!",
+  "mission": "Planetary-scale land control and sustained warfare."
 }
