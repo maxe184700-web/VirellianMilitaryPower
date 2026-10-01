@@ -15,9 +15,19 @@ async function loadCountryProfile() {
     const getValue = (path) =>
       path.split(".").reduce((value, key) => value?.[key], data);
 
-    const formatValue = (value) => {
+    const formatValue = (value, field) => {
       if (value === null || value === undefined || value === "") {
         return "To be added";
+      }
+
+      if (field === "gdp" || field === "defenseBudget") {
+        const trillions = value / 1_000_000_000_000;
+        const maximumFractionDigits = field === "gdp" ? 1 : 3;
+
+        return "$" + trillions.toLocaleString("en-US", {
+          minimumFractionDigits: 0,
+          maximumFractionDigits
+        }) + " trillion";
       }
 
       if (typeof value === "number") {
@@ -28,8 +38,9 @@ async function loadCountryProfile() {
     };
 
     fields.forEach((element) => {
-      const value = getValue(element.dataset.profileField);
-      element.textContent = formatValue(value);
+      const field = element.dataset.profileField;
+      const value = getValue(field);
+      element.textContent = formatValue(value, field);
     });
   } catch (error) {
     console.error("Could not load Virellian profile data:", error);
