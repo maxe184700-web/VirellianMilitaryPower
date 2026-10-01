@@ -548,6 +548,7 @@
   width: 100%;
   aspect-ratio: 3 / 2;
   object-fit: cover;
+  object-position: center;
   background: #0b1116;
 }
 
