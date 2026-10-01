@@ -3,7 +3,7 @@ async function loadCountryProfile() {
 
   try {
     const [overviewResponse, economyResponse] = await Promise.all([
-      fetch("../../data/virellia/overview.json?v=2", { cache: "no-store" }),
+      fetch("../../data/virellia/overview.json?v=3", { cache: "no-store" }),
       fetch("../../data/virellia/economy.json?v=1", { cache: "no-store" })
     ]);
 
@@ -41,6 +41,27 @@ async function loadCountryProfile() {
           minimumFractionDigits: 2,
           maximumFractionDigits: 2
         }) + "%";
+      }
+
+      if (field.startsWith("defenseFunding.") && typeof value === "number") {
+        if (value >= 1_000_000_000_000) {
+          return "$" + (value / 1_000_000_000_000).toLocaleString("en-US", {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 6
+          }) + " trillion";
+        }
+
+        if (value >= 1_000_000_000) {
+          return "$" + (value / 1_000_000_000).toLocaleString("en-US", {
+            minimumFractionDigits: 0,
+            maximumFractionDigits: 3
+          }) + " billion";
+        }
+
+        return "$" + (value / 1_000_000).toLocaleString("en-US", {
+          minimumFractionDigits: 0,
+          maximumFractionDigits: 3
+        }) + " million";
       }
 
       if (field.endsWith("Percent")) {
