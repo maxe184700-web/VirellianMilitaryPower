@@ -16,5 +16,34 @@
     "submarines": 89
   },
   "defenseBudgetShare": 3.64,
-  "defenseSpendingOverview": "Virellia's military budget reflects years of government and public support for maintaining a strong military force capable of engaging powerful adversaries around the globe. The size of the budget is primarily shaped by Virellia's involvement in the First, Second, and Third World Wars during the 20th century, heightened tensions with China, and the 2002 terrorist attack on Costa Serenidad, Virellia's primary financial hub and the location of the North American Trade Center and the Global Trade Center."
+  "defenseSpendingOverview": "Virellia's military budget reflects years of government and public support for maintaining a strong military force capable of engaging powerful adversaries around the globe. The size of the budget is primarily shaped by Virellia's involvement in the First, Second, and Third World Wars during the 20th century, heightened tensions with China, and the 2002 terrorist attack on Costa Serenidad, Virellia's primary financial hub and the location of the North American Trade Center and the Global Trade Center.",
+  "defenseFunding": {
+    "usualTotal": 1328000000000,
+    "supplementalTotal": 81945000000,
+    "combinedTypicalTotal": 1409945000000,
+    "usual": {
+      "army": 212000000000,
+      "navy": 440000000000,
+      "marineCorps": 102000000000,
+      "airForce": 374200000000,
+      "coastGuard": 13200000000,
+      "nationalGuard": 93000000000,
+      "spaceForce": 23600000000,
+      "militaryPolice": 8000000000,
+      "cyberDefenseCorps": 28000000000,
+      "strategicCommand": 34000000000
+    },
+    "supplemental": {
+      "army": 10000000000,
+      "navy": 21000000000,
+      "marineCorps": 8000000000,
+      "airForce": 9000000000,
+      "coastGuard": 4000000000,
+      "nationalGuard": 6000000000,
+      "spaceForce": 2000000000,
+      "militaryPolice": 945000000,
+      "cyberDefenseCorps": 8000000000,
+      "strategicCommand": 13000000000
+    }
+  }
 }
