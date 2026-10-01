@@ -15,11 +15,11 @@
       "history": "Originally designed in the late 1970s, the MBT-19 Raethis was intended for service during the Third World War. Following the conflict's conclusion on January 15, 1978, under the Treaty of Alexandria, planned procurement was sharply reduced. The Virellian Army nevertheless continued with production because the aging T-12 Rattlesnake, which had already outlasted six intended successors, was once again falling behind technologically and could no longer be kept competitive through upgrades alone.",
       "modernization": "Across its production life, the Raethis evolved through four major follow-on variants, the Raethis-2 through Raethis-5, with each incorporating improvements over the preceding model. The Virellian Army has historically struggled to field satisfactory replacements for its main battle tanks, and that pattern continued with the MBT-19. Despite remaining the overwhelming majority of Virellia's tank fleet after decades of service, the Raethis is now approaching retirement. The MBT-20 Lynx has outperformed its predecessor in most evaluated areas and has been selected by the Army as its replacement.",
       "images": {
-        "Raethis-1": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg",
-        "Raethis-2": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg",
-        "Raethis-3": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg",
-        "Raethis-4": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg",
-        "Raethis-5": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg"
+        "Raethis-1": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg",
+        "Raethis-2": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg",
+        "Raethis-3": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg",
+        "Raethis-4": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg",
+        "Raethis-5": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg"
       }
     },
     "lynx": {
@@ -31,7 +31,7 @@
       "status": "Selected replacement for the MBT-19 Raethis.",
       "history": "The Lynx Program began in the early 2010s when the Virellian Army started formally seeking a replacement for the MBT-19 Raethis. Army leadership wanted to retire the older tank before its primary frontline armor became increasingly outdated despite continued upgrades. Early development experienced funding reductions and periods of dissatisfaction from the Army, but subsequent improvements and a more efficient production method strengthened the program.",
       "procurement": "In early 2023, the Virellian Army signed a contract to begin replacing the Raethis with the MBT-20 Lynx. Of the initial 330 tanks, 78 have been delivered and 252 remain on order. The program also carries a current planning figure of 500 tanks. Production is still maturing and is expected to increase substantially once full-rate manufacturing is reached.",
-      "image": "../../../assets/equipment/virellia/army/virellia-placeholder.jpg"
+      "image": "../../../assets/equipment/virellia/army/virellia-placeholder-v2.jpg"
     }
   }
 }
