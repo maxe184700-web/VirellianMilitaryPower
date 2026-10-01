@@ -32,15 +32,46 @@
     }
   },
   "defenseProduction": {
-    "overview": "Virellia maintains a large-scale domestic defense-production system capable of producing major naval vessels, military aircraft, armored and support vehicles, missiles, and large quantities of ammunition.",
-    "production": {
-      "navalVessels": "10–25 Navy vessels yearly, depending on orders, conditions, and global situations.",
-      "militaryAircraft": "473–523 military aircraft yearly, depending on orders, conditions, and global situations.",
-      "militaryVehicles": "15,000–20,000 vehicles yearly, depending on orders, conditions, and global situations.",
-      "missiles": "13,000 missiles yearly across all types.",
+    "overview": "Virellia maintains a broad domestic defense-production base spanning combat aviation, naval construction, armored and support vehicles, missile systems, munitions, soldier equipment, electronics, and space systems. Annual output varies by procurement demand, operational conditions, and global security requirements.",
+    "aviation": {
+      "fighterAircraft": "104–165 aircraft yearly.",
+      "groundAttackAircraft": "35–45 aircraft yearly.",
+      "supportAircraft": "313–334 aircraft yearly.",
+      "smallDrones": "36,000–40,000 drones yearly, excluding large unmanned aircraft.",
+      "largeDrones": "50–60 large drones yearly.",
+      "helicopters": "475–479 helicopters yearly, excluding attack helicopters.",
+      "attackHelicopters": "28–37 attack helicopters yearly."
+    },
+    "naval": {
+      "surfaceShips": "10–25 surface vessels yearly.",
+      "submarines": "4–8 submarines yearly."
+    },
+    "groundSystems": {
+      "tanks": "103–120 tanks yearly.",
+      "artillery": "1,095–1,132 rocket, towed, and self-propelled artillery systems yearly.",
+      "ifvs": "76–90 infantry fighting vehicles yearly.",
+      "apcs": "56–68 armored personnel carriers yearly.",
+      "missileAirDefenseSystems": "10–14 missile-based air-defense systems yearly.",
+      "ballisticAirDefenseSystems": "36–40 ballistic air-defense systems yearly.",
+      "logisticsVehicles": "1,000–1,500 logistics vehicles yearly.",
+      "engineeringVehicles": "950–1,200 engineering vehicles yearly."
+    },
+    "missilesAirDefense": {
+      "longRangeMissiles": "400–500 long-range missiles yearly.",
+      "airDefenseMissiles": "340–380 air-defense missiles yearly.",
+      "airToAirMissiles": "1,400–1,700 air-to-air missiles yearly."
+    },
+    "munitionsSoldierSystems": {
+      "aircraftBallisticAmmunition": "50 million rounds yearly.",
       "smallArmsAmmunition": "4–5 billion rounds yearly.",
+      "artilleryShells": "596,000 shells yearly.",
       "tankShells": "8,000–13,000 shells yearly.",
-      "artilleryShells": "596,000 shells yearly."
+      "soldierEquipment": "11,000,000–34,000,000 units yearly, including helmets, armor, night-vision systems, optics, uniforms, and load-bearing equipment.",
+      "smallArms": "29,000–36,000 firearms yearly."
+    },
+    "spaceElectronics": {
+      "spaceSystems": "90–190 space systems yearly.",
+      "electronics": "34,000–49,000 systems yearly, including AESA radars, electronic-warfare systems, radios, datalinks, computers, and sensors."
     }
   }
 }
