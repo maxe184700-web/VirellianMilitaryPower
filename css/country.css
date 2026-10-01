@@ -973,3 +973,46 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.branch-directory .branch-link-card {
+  min-height: 190px;
+  padding: 20px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+  color: var(--text);
+  transition: background .18s ease, transform .18s ease, box-shadow .18s ease;
+}
+
+.branch-directory .branch-link-card > span {
+  color: var(--gold);
+  font-family: "Oswald", sans-serif;
+  font-size: .8rem;
+}
+
+.branch-directory .branch-link-card h3 {
+  margin-top: 10px;
+}
+
+.branch-directory .branch-link-card p {
+  color: var(--muted);
+  font-size: .78rem;
+}
+
+.branch-directory .branch-link-card em {
+  color: var(--accent);
+  font-size: .68rem;
+  font-style: normal;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.branch-directory .branch-link-card:hover,
+.branch-directory .branch-link-card:focus-visible {
+  background: #1c2932;
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--gold);
+  transform: translateY(-2px);
+}
