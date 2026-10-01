@@ -36,10 +36,10 @@
     "limitedMinorAccession": "Age 16 with parental consent and additional accession requirements.",
     "enlistmentWithoutParentalConsent": "Age 18 and older.",
     "typicalContractLength": "2–6 years, depending on contract.",
-    "annualRecruitmentTarget": null,
+    "annualRecruitmentTarget": 25000,
     "annualRecruitsAccepted": 22000,
-    "applicantAcceptanceRate": null,
-    "recruitingStationsCommands": null
+    "applicantAcceptanceRate": "68.2%",
+    "recruitingStationsCommands": "Recruitment Headquarters: Virellian Army Central Command Base, Phoenix, Arizona. Recruitment Command: Virellian Army Recruitment Command (VARC)."
   },
   "eligibility": [
     "Applicants normally must be between 18 and 40 years of age. Limited enlistment at age 16 is permitted with parental consent and additional qualifying requirements.",
