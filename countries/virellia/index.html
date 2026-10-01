@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=3">
+  <link rel="stylesheet" href="../../css/country.css?v=4">
 </head>
 <body>
   <header class="site-header">
@@ -135,11 +135,18 @@
             <p>Annual defense budget: <strong data-profile-field="defenseBudget">To be added</strong>. Share of GDP: <strong data-profile-field="defenseBudgetShare">To be added</strong>.</p>
             <em data-toggle-label>Click for details</em>
           </article>
-          <article>
+          <article
+            class="economy-toggle-card"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="industrial-base-detail"
+            data-toggle-target="industrial-base-detail"
+          >
             <span>03</span>
             <h3>Industrial Base</h3>
-            <p>Heavy manufacturing, steel, electronics, construction, civilian industry, and large-scale production capacity.</p>
-            <em>Coming soon</em>
+            <p>Heavy manufacturing, shipbuilding, aerospace, electronics, vehicles, steel, and large-scale production capacity.</p>
+            <em data-toggle-label>Click for details</em>
           </article>
           <article>
             <span>04</span>
@@ -160,6 +167,58 @@
             <em>Coming soon</em>
           </article>
         </div>
+
+        <section id="industrial-base-detail" class="industrial-base-block" aria-labelledby="industrial-base-title" hidden>
+          <div class="industrial-base-heading">
+            <div>
+              <p class="kicker">INDUSTRIAL CAPABILITY</p>
+              <h3 id="industrial-base-title">Industrial Base</h3>
+            </div>
+            <div class="supply-chain-summary">
+              <div>
+                <span>Domestic Supply Chain</span>
+                <strong data-profile-field="economy.industrialBase.supplyChain.domesticPercent">To be added</strong>
+              </div>
+              <div>
+                <span>Imported Supply Chain</span>
+                <strong data-profile-field="economy.industrialBase.supplyChain.importedPercent">To be added</strong>
+              </div>
+            </div>
+          </div>
+
+          <p class="industrial-overview-copy" data-profile-field="economy.industrialBase.overview">To be added</p>
+
+          <div class="industry-data-grid">
+            <div><span>Military Shipbuilding</span><strong data-profile-field="economy.industrialBase.production.shipbuildingMilitary">To be added</strong></div>
+            <div><span>Commercial Shipbuilding</span><strong data-profile-field="economy.industrialBase.production.shipbuildingCommercial">To be added</strong></div>
+            <div><span>Military Aerospace</span><strong data-profile-field="economy.industrialBase.production.aerospaceMilitary">To be added</strong></div>
+            <div><span>Commercial Aerospace</span><strong data-profile-field="economy.industrialBase.production.aerospaceCommercial">To be added</strong></div>
+            <div><span>Military Vehicle Production</span><strong data-profile-field="economy.industrialBase.production.automotiveMilitary">To be added</strong></div>
+            <div><span>Civilian Vehicle Production</span><strong data-profile-field="economy.industrialBase.production.automotiveCivilian">To be added</strong></div>
+            <div><span>Missile Production</span><strong data-profile-field="economy.industrialBase.production.missiles">To be added</strong></div>
+            <div><span>Small-Arms Ammunition</span><strong data-profile-field="economy.industrialBase.production.smallArmsAmmunition">To be added</strong></div>
+            <div><span>Tank Shell Production</span><strong data-profile-field="economy.industrialBase.production.tankShells">To be added</strong></div>
+            <div><span>Artillery Shell Production</span><strong data-profile-field="economy.industrialBase.production.artilleryShells">To be added</strong></div>
+            <div><span>Electronics &amp; Semiconductors</span><strong data-profile-field="economy.industrialBase.production.electronicsSemiconductors">To be added</strong></div>
+            <div><span>Chemical Industry</span><strong data-profile-field="economy.industrialBase.production.chemicalIndustry">To be added</strong></div>
+            <div><span>Machine Tools</span><strong data-profile-field="economy.industrialBase.production.machineTools">To be added</strong></div>
+            <div><span>Rail &amp; Locomotive Production</span><strong data-profile-field="economy.industrialBase.production.railLocomotives">To be added</strong></div>
+            <div><span>Industrial Robotics / Automation</span><strong data-profile-field="economy.industrialBase.production.industrialRobotics">To be added</strong></div>
+            <div><span>Steel Production</span><strong data-profile-field="economy.industrialBase.production.steel">To be added</strong></div>
+            <div><span>Aluminum Production</span><strong data-profile-field="economy.industrialBase.production.aluminum">To be added</strong></div>
+          </div>
+
+          <div class="industry-support-grid">
+            <div class="industry-list-panel">
+              <h4>Major Industrial Regions</h4>
+              <ul data-profile-list="economy.industrialBase.majorIndustrialRegions"></ul>
+            </div>
+            <div class="industry-list-panel">
+              <h4>Large Civilian Manufacturers Supporting Wartime Production</h4>
+              <ul data-profile-list="economy.industrialBase.civilianManufacturers"></ul>
+            </div>
+          </div>
+        </section>
 
         <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title" hidden>
         <div class="defense-spending-heading">
@@ -308,6 +367,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=4"></script>
+  <script src="../../js/country-profile.js?v=5"></script>
 </body>
 </html>
