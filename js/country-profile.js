@@ -2,7 +2,7 @@ async function loadCountryProfile() {
   const fields = document.querySelectorAll("[data-profile-field]");
 
   try {
-    const response = await fetch("../../data/virellia/overview.json?v=1", {
+    const response = await fetch("../../data/virellia/overview.json?v=2", {
       cache: "no-store"
     });
 
@@ -28,6 +28,13 @@ async function loadCountryProfile() {
           minimumFractionDigits: 0,
           maximumFractionDigits
         }) + " trillion";
+      }
+
+      if (field === "defenseBudgetShare") {
+        return Number(value).toLocaleString("en-US", {
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2
+        }) + "%";
       }
 
       if (typeof value === "number") {
