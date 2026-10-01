@@ -1,17 +1,18 @@
 {
   "officialName": "Virellian Republic",
-  "capital": null,
-  "population": null,
-  "gdp": null,
-  "defenseBudget": null,
-  "activePersonnel": null,
-  "reservePersonnel": null,
+  "capital": "Tidefall City",
+  "population": 395000000,
+  "gdp": 36500000000000,
+  "defenseBudget": 1328000000000,
+  "activePersonnel": 1890000,
+  "reservePersonnel": 958000,
+  "militaryRank": 1,
   "military": {
-    "totalAircraft": null,
+    "totalAircraft": 15116,
     "combatAircraft": null,
-    "mainBattleTanks": null,
-    "armoredVehicles": null,
-    "navalVessels": null,
-    "submarines": null
+    "mainBattleTanks": 5970,
+    "armoredVehicles": 385000,
+    "navalVessels": 417,
+    "submarines": 89
   }
 }
