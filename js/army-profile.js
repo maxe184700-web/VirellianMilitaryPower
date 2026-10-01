@@ -1,6 +1,7 @@
 async function loadArmyProfile() {
   const armyFields = document.querySelectorAll("[data-army-field]");
   const tankFields = document.querySelectorAll("[data-tank-field]");
+  const personnelFields = document.querySelectorAll("[data-personnel-field]");
 
   const getValue = (data, path) =>
     path.split(".").reduce((value, key) => value?.[key], data);
@@ -24,18 +25,20 @@ async function loadArmyProfile() {
   };
 
   try {
-    const [overviewResponse, tanksResponse] = await Promise.all([
-      fetch("../../../data/virellia/army/overview.json?v=1", { cache: "no-store" }),
-      fetch("../../../data/virellia/army/tanks.json?v=1", { cache: "no-store" })
+    const [overviewResponse, tanksResponse, personnelResponse] = await Promise.all([
+      fetch("../../../data/virellia/army/overview.json?v=2", { cache: "no-store" }),
+      fetch("../../../data/virellia/army/tanks.json?v=1", { cache: "no-store" }),
+      fetch("../../../data/virellia/army/personnel.json?v=1", { cache: "no-store" })
     ]);
 
-    if (!overviewResponse.ok || !tanksResponse.ok) {
+    if (!overviewResponse.ok || !tanksResponse.ok || !personnelResponse.ok) {
       throw new Error("Army profile data request failed.");
     }
 
-    const [overview, tanks] = await Promise.all([
+    const [overview, tanks, personnel] = await Promise.all([
       overviewResponse.json(),
-      tanksResponse.json()
+      tanksResponse.json(),
+      personnelResponse.json()
     ]);
 
     armyFields.forEach((element) => {
@@ -46,6 +49,53 @@ async function loadArmyProfile() {
     tankFields.forEach((element) => {
       const field = element.dataset.tankField;
       element.textContent = formatValue(getValue(tanks, field), field);
+    });
+
+    personnelFields.forEach((element) => {
+      const field = element.dataset.personnelField;
+      element.textContent = formatValue(getValue(personnel, field), field);
+    });
+
+    document.querySelectorAll("[data-personnel-list]").forEach((list) => {
+      const values = getValue(personnel, list.dataset.personnelList);
+      list.innerHTML = "";
+
+      if (!Array.isArray(values) || values.length === 0) {
+        const item = document.createElement("li");
+        item.textContent = "To be added";
+        list.appendChild(item);
+        return;
+      }
+
+      values.forEach((value) => {
+        const item = document.createElement("li");
+        item.textContent = value;
+        list.appendChild(item);
+      });
+    });
+
+    document.querySelectorAll("[data-rank-list]").forEach((grid) => {
+      const ranks = getValue(personnel, grid.dataset.rankList);
+      grid.innerHTML = "";
+
+      if (!Array.isArray(ranks)) return;
+
+      ranks.forEach((rank) => {
+        const card = document.createElement("div");
+        card.className = "rank-card";
+
+        const name = document.createElement("strong");
+        name.textContent = rank.rank;
+
+        const grade = document.createElement("span");
+        grade.textContent = rank.payGrade + ", " + rank.abbreviation;
+
+        const nato = document.createElement("small");
+        nato.textContent = rank.natoCode;
+
+        card.append(name, grade, nato);
+        grid.appendChild(card);
+      });
     });
   } catch (error) {
     console.error("Could not load Virellian Army profile data:", error);
