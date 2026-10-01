@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=1">
+  <link rel="stylesheet" href="../../css/country.css?v=2">
 </head>
 <body>
   <header class="site-header">
@@ -58,6 +58,7 @@
     <nav class="profile-tabs" aria-label="Virellian profile sections">
       <div class="content-wrap">
         <a href="#overview">Overview</a>
+        <a href="#economy">Economy & Industry</a>
         <a href="#branches">Armed Forces</a>
         <a href="#equipment">Equipment</a>
         <a href="#industry">Defense Industry</a>
@@ -101,8 +102,59 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title">
+
+    <section id="economy" class="section-band">
+      <div class="content-wrap country-section">
+        <div class="section-title compact">
+          <div>
+            <p class="kicker">ECONOMIC POWER</p>
+            <h2>Economy &amp; Industrial Strength</h2>
+          </div>
+          <p>Economic scale, industrial capacity, strategic resources, and the production base that support Virellia's military power.</p>
+        </div>
+
+        <div class="branch-directory economy-directory">
+          <article>
+            <span>01</span>
+            <h3>Economic Scale</h3>
+            <p>Gross domestic product: <strong data-profile-field="gdp">To be added</strong>.</p>
+            <em>Active data</em>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Defense Spending</h3>
+            <p>Annual defense budget: <strong data-profile-field="defenseBudget">To be added</strong>. Share of GDP: <strong data-profile-field="defenseBudgetShare">To be added</strong>.</p>
+            <em>Profiled</em>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Industrial Base</h3>
+            <p>Heavy manufacturing, steel, electronics, construction, civilian industry, and large-scale production capacity.</p>
+            <em>Coming soon</em>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Energy &amp; Resources</h3>
+            <p>Energy generation, uranium, fuel supplies, strategic minerals, and other resources supporting national industry.</p>
+            <em>Coming soon</em>
+          </article>
+          <article>
+            <span>05</span>
+            <h3>Defense Production</h3>
+            <p>Aircraft, ships, armored vehicles, missiles, ammunition, electronics, and other military manufacturing.</p>
+            <em>Coming soon</em>
+          </article>
+          <article>
+            <span>06</span>
+            <h3>War Sustainment</h3>
+            <p>Industrial replacement capacity, logistics depth, stockpiles, repair capability, and long-term wartime production.</p>
+            <em>Coming soon</em>
+          </article>
+        </div>
+
+        <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title">
         <div class="defense-spending-heading">
           <div>
             <p class="kicker">DEFENSE FINANCES</p>
@@ -121,6 +173,7 @@
         </div>
         <p class="defense-spending-copy" data-profile-field="defenseSpendingOverview">To be added</p>
       </section>
+      </div>
     </section>
 
     <section id="branches" class="section-band">
