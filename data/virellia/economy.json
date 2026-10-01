@@ -91,5 +91,66 @@
     "inflation": 1.9,
     "industrialOutput": "Very High",
     "manufacturingShareOfGdp": "10.3%–10.9%"
+  },
+  "energyResources": {
+    "overview": "Virellia maintains a highly diversified energy and strategic-resource base, combining large domestic fossil-fuel reserves, extensive hydroelectric generation, a major nuclear sector, and significant mineral production. Domestic sources supply 87% of national energy requirements, while the national electrical grid maintains 99.99% reliability.",
+    "electricity": {
+      "totalGeneration": "5,898.73 TWh annually.",
+      "gridCapacity": "1,200 GW.",
+      "gridReliability": "99.99%.",
+      "domesticEnergyShare": "87% domestic.",
+      "importedEnergyShare": "13% imported.",
+      "nuclearCapacity": "113,598 MW.",
+      "nuclearReactors": "124 reactors.",
+      "generationMix": {
+        "coal": "32.1%",
+        "naturalGas": "20.8%",
+        "nuclear": "16.5%",
+        "hydro": "24%",
+        "solar": "2.1%",
+        "wind": "4.5%"
+      }
+    },
+    "fuelProduction": {
+      "crudeOil": "7.8 million barrels per day.",
+      "naturalGas": "12.5 trillion cubic feet annually.",
+      "oilRefining": "13.5 million barrels per day.",
+      "coal": "~780 million tonnes annually.",
+      "strategicPetroleumReserve": "1.8 billion barrels."
+    },
+    "mineralProduction": {
+      "uraniumRange": "22,000–26,000 tU annually.",
+      "uraniumAnnualBenchmark": "~26,000 tonnes annually.",
+      "copper": "~4.0 million tonnes annually.",
+      "nickel": "~600,000 tonnes annually.",
+      "bauxite": "~95 million tonnes annually.",
+      "ironOre": "~180 million tonnes annually.",
+      "lithium": "~55,000 tonnes Li annually.",
+      "titanium": "~500,000 tonnes TiO₂-equivalent annually.",
+      "rareEarths": "~120,000 tonnes REO annually."
+    },
+    "reserves": {
+      "copper": "180 million tonnes.",
+      "lithium": "1.8 million tonnes.",
+      "nickel": "12.5 million tonnes.",
+      "titanium": "12 million tonnes TiO₂-equivalent.",
+      "bauxite": "4.1 billion tonnes.",
+      "ironOre": "3.5 billion tonnes.",
+      "naturalGas": "145 Tcf.",
+      "crudeOil": "42 billion barrels.",
+      "coal": "140 billion tonnes.",
+      "uranium": "1.52 million tU.",
+      "rareEarths": "12 million tonnes REO."
+    },
+    "majorProducingRegions": [
+      "Greenland",
+      "Alaska",
+      "Arizona–Sonora–New Virellia",
+      "Virellia Gulf Region",
+      "Philippines",
+      "Caribbean Mineral Belt",
+      "Guiana Shield",
+      "Northern Venezuela–Colombia"
+    ]
   }
 }
