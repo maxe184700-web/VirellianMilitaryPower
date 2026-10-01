@@ -458,3 +458,66 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+.defense-production-block {
+  margin-top: 18px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: #10171d;
+}
+
+.defense-production-block[hidden] {
+  display: none !important;
+}
+
+.defense-production-heading h3 {
+  margin-top: 0;
+}
+
+.defense-production-copy {
+  margin: 0 0 20px;
+  max-width: 1000px;
+  color: #c2ccd3;
+  font-size: .88rem;
+  line-height: 1.7;
+}
+
+.defense-production-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.defense-production-grid > div {
+  min-height: 98px;
+  padding: 15px 16px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--panel);
+}
+
+.defense-production-grid span {
+  display: block;
+  margin-bottom: 7px;
+  color: var(--gold);
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+}
+
+.defense-production-grid strong {
+  display: block;
+  color: #dbe3e8;
+  font-size: .8rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+@media (max-width: 760px) {
+  .defense-production-grid {
+    grid-template-columns: 1fr;
+  }
+}
