@@ -298,3 +298,29 @@
 .economy-directory article:nth-child(2) {
   background: #172129;
 }
+
+
+.economy-toggle-card {
+  cursor: pointer;
+  transition: background .18s ease, border-color .18s ease, transform .18s ease;
+}
+
+.economy-toggle-card:hover,
+.economy-toggle-card:focus-visible {
+  background: #1c2932 !important;
+  outline: none;
+  box-shadow: inset 0 0 0 1px var(--gold);
+}
+
+.economy-toggle-card:hover {
+  transform: translateY(-2px);
+}
+
+.economy-toggle-card.is-open {
+  background: #1c2932 !important;
+  box-shadow: inset 0 0 0 1px rgba(213, 184, 109, .65);
+}
+
+.defense-spending-block[hidden] {
+  display: none !important;
+}
