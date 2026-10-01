@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=2">
+  <link rel="stylesheet" href="../../css/country.css?v=3">
 </head>
 <body>
   <header class="site-header">
@@ -122,11 +122,18 @@
             <p>Gross domestic product: <strong data-profile-field="gdp">To be added</strong>.</p>
             <em>Active data</em>
           </article>
-          <article>
+          <article
+            class="economy-toggle-card"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="defense-spending"
+            data-toggle-target="defense-spending"
+          >
             <span>02</span>
             <h3>Defense Spending</h3>
             <p>Annual defense budget: <strong data-profile-field="defenseBudget">To be added</strong>. Share of GDP: <strong data-profile-field="defenseBudgetShare">To be added</strong>.</p>
-            <em>Profiled</em>
+            <em data-toggle-label>Click for details</em>
           </article>
           <article>
             <span>03</span>
@@ -154,7 +161,7 @@
           </article>
         </div>
 
-        <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title">
+        <section id="defense-spending" class="defense-spending-block" aria-labelledby="defense-spending-title" hidden>
         <div class="defense-spending-heading">
           <div>
             <p class="kicker">DEFENSE FINANCES</p>
@@ -301,6 +308,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=3"></script>
+  <script src="../../js/country-profile.js?v=4"></script>
 </body>
 </html>
