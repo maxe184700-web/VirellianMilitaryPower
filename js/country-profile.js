@@ -61,3 +61,42 @@ async function loadCountryProfile() {
 }
 
 loadCountryProfile();
+
+
+function initEconomyDetailToggles() {
+  const toggles = document.querySelectorAll("[data-toggle-target]");
+
+  toggles.forEach((toggle) => {
+    const targetId = toggle.dataset.toggleTarget;
+    const target = document.getElementById(targetId);
+    const label = toggle.querySelector("[data-toggle-label]");
+
+    if (!target) return;
+
+    const setOpen = (open) => {
+      target.hidden = !open;
+      toggle.setAttribute("aria-expanded", String(open));
+      toggle.classList.toggle("is-open", open);
+
+      if (label) {
+        label.textContent = open ? "Click to hide details" : "Click for details";
+      }
+    };
+
+    const activate = () => {
+      const isOpen = toggle.getAttribute("aria-expanded") === "true";
+      setOpen(!isOpen);
+    };
+
+    toggle.addEventListener("click", activate);
+
+    toggle.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        activate();
+      }
+    });
+  });
+}
+
+initEconomyDetailToggles();
