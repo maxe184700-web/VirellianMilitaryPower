@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../css/style.css?v=2">
-  <link rel="stylesheet" href="../../css/country.css?v=9">
+  <link rel="stylesheet" href="../../css/country.css?v=10">
 </head>
 <body>
   <header class="site-header">
@@ -181,11 +181,18 @@
             <p>Military ships, aircraft, vehicles, missiles, ammunition, and other dedicated defense manufacturing.</p>
             <em data-toggle-label>Click for details</em>
           </article>
-          <article>
+          <article
+            class="economy-toggle-card"
+            role="button"
+            tabindex="0"
+            aria-expanded="false"
+            aria-controls="war-sustainment-detail"
+            data-toggle-target="war-sustainment-detail"
+          >
             <span>06</span>
             <h3>War Sustainment</h3>
-            <p>Industrial replacement capacity, logistics depth, stockpiles, repair capability, and long-term wartime production.</p>
-            <em>Coming soon</em>
+            <p>Long-war endurance, mobilization, industrial conversion, overseas logistics, stockpiles, and strategic deterrence.</p>
+            <em data-toggle-label>Click for details</em>
           </article>
         </div>
 
@@ -396,6 +403,51 @@
               <h4>Major Resource-Producing Regions</h4>
               <div class="resource-region-panel">
                 <ul data-profile-list="economy.energyResources.majorProducingRegions"></ul>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section id="war-sustainment-detail" class="war-sustainment-block" aria-labelledby="war-sustainment-title" hidden>
+          <div class="war-sustainment-heading">
+            <div>
+              <p class="kicker">LONG-WAR CAPACITY</p>
+              <h3 id="war-sustainment-title">War Sustainment</h3>
+            </div>
+          </div>
+
+          <p class="war-sustainment-overview" data-profile-field="economy.warSustainment.overview">To be added</p>
+
+          <div class="war-sustainment-groups">
+            <section class="war-sustainment-group">
+              <h4>Long-War Capacity</h4>
+              <p data-profile-field="economy.warSustainment.longWarCapacity">To be added</p>
+            </section>
+
+            <section class="war-sustainment-group">
+              <h4>Mobilization</h4>
+              <p data-profile-field="economy.warSustainment.mobilization">To be added</p>
+            </section>
+
+            <section class="war-sustainment-group">
+              <h4>Industrial Conversion</h4>
+              <p data-profile-field="economy.warSustainment.industrialConversion">To be added</p>
+            </section>
+
+            <section class="war-sustainment-group">
+              <h4>Overseas Posture</h4>
+              <p data-profile-field="economy.warSustainment.overseasPosture">To be added</p>
+            </section>
+
+            <section class="war-sustainment-group">
+              <h4>Strategic Deterrence</h4>
+              <p data-profile-field="economy.warSustainment.strategicDeterrence">To be added</p>
+            </section>
+
+            <section class="war-sustainment-group">
+              <h4>Key Sustainment Factors</h4>
+              <div class="war-factor-panel">
+                <ul data-profile-list="economy.warSustainment.keyFactors"></ul>
               </div>
             </section>
           </div>
@@ -695,6 +747,6 @@
   </footer>
 
   <script src="../../js/main.js?v=2"></script>
-  <script src="../../js/country-profile.js?v=10"></script>
+  <script src="../../js/country-profile.js?v=11"></script>
 </body>
 </html>
