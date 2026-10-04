@@ -2,6 +2,7 @@ async function loadArmyProfile() {
   const armyFields = document.querySelectorAll("[data-army-field]");
   const tankFields = document.querySelectorAll("[data-tank-field]");
   const personnelFields = document.querySelectorAll("[data-personnel-field]");
+  const armoredFields = document.querySelectorAll("[data-armored-field]");
 
   const getValue = (data, path) =>
     path.split(".").reduce((value, key) => value?.[key], data);
@@ -25,20 +26,22 @@ async function loadArmyProfile() {
   };
 
   try {
-    const [overviewResponse, tanksResponse, personnelResponse] = await Promise.all([
+    const [overviewResponse, tanksResponse, personnelResponse, armoredResponse] = await Promise.all([
       fetch("../../../data/virellia/army/overview.json?v=2", { cache: "no-store" }),
       fetch("../../../data/virellia/army/tanks.json?v=6", { cache: "no-store" }),
-      fetch("../../../data/virellia/army/personnel.json?v=2", { cache: "no-store" })
+      fetch("../../../data/virellia/army/personnel.json?v=2", { cache: "no-store" }),
+      fetch("../../../data/virellia/army/armored-vehicles.json?v=1", { cache: "no-store" })
     ]);
 
-    if (!overviewResponse.ok || !tanksResponse.ok || !personnelResponse.ok) {
+    if (!overviewResponse.ok || !tanksResponse.ok || !personnelResponse.ok || !armoredResponse.ok) {
       throw new Error("Army profile data request failed.");
     }
 
-    const [overview, tanks, personnel] = await Promise.all([
+    const [overview, tanks, personnel, armored] = await Promise.all([
       overviewResponse.json(),
       tanksResponse.json(),
-      personnelResponse.json()
+      personnelResponse.json(),
+      armoredResponse.json()
     ]);
 
     armyFields.forEach((element) => {
@@ -56,6 +59,16 @@ async function loadArmyProfile() {
       if (source) {
         image.src = source;
       }
+    });
+
+    armoredFields.forEach((element) => {
+      const field = element.dataset.armoredField;
+      element.textContent = formatValue(getValue(armored, field), field);
+    });
+
+    document.querySelectorAll("[data-armored-image]").forEach((image) => {
+      const source = getValue(armored, image.dataset.armoredImage);
+      if (source) image.src = source;
     });
 
     personnelFields.forEach((element) => {
